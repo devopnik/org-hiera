@@ -1,0 +1,17 @@
+########## Development Settings ##########
+classes:
+  - gitlab
+gitlab::external_url: 'http://gitlab.devopco.lcl'
+gitlab::gitlab_domain: 'gitlab.devopco.lcl'
+gitlab::gitlab_rails:
+  time_zone: 'UTC'
+  gitlab_email_enabled: false
+  gitlab_default_theme: 4
+  gitlab_email_display_name: 'Gitlab'
+gitlab::sidekiq:
+  shutdown_timeout: 5
+gitlab::secrets:
+  gitlab_shell:
+    secret_token: 'asecrettoken1234567890'
+  gitlab_rails:
+    secret_token: 'asecrettoken123456789010'
